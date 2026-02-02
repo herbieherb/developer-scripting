@@ -91,33 +91,6 @@ BEGIN
 END;
 Run(testResCountSymFolders);
 ```
-VectorScript ====
-```pascal
-CONST
-    kHatch = 66;
-    kDefHatchFolder = 105;
-VAR
-    listID, numItems: LONGINT;
-BEGIN
-    { Create a resource list of hatches from the current document and } 
-    { the default hatch folder. }
-    listID := BuildResourceList(kHatch, kDefHatchFolder, '', numItems);
-    { ... }
-```
-
-```pascal
-{ try this on a file with some symbol folders }
-PROCEDURE testResCountSymFolders;
-VAR
-    folderList : LONGINT;
-    numFolders : INTEGER;
-BEGIN
-    { list symbol folders in curr doc }
-    folderList := BuildResourceList(92, 0, '', numFolders);
-    alrtDialog(concat(numFolders));
-END;
-Run(testResCountSymFolders);
-```
 
 Another example from Pat Stanford <pat@coviana.com>
 November 2006
