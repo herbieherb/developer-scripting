@@ -34,10 +34,10 @@ def vs.BuildResourceList(type, folderIndex, subFolderName):
 
 ## Remarks
 It also will not work on any symbol which is ''inside'' a folder -- it only works on symbols at the top level.
-*Kars*, 26-08-2020: it is now getting all symbols including "inside" a folder and handling them as one resource list. (using VW 2020).
+*Kars*, 2020.08.26: it is now getting all symbols including "inside" a folder and handling them as one resource list. (using VW 2020).
 
-*Orso*, 2007.06.02]: This doesn't seem to support Symbol Folders (object type 92). 
-*Kars*, 26-08-2020: it is working with Symbol Folders (object type 92) (using VW 2020).
+*Orso*, 2007.06.02: This doesn't seem to support Symbol Folders (object type 92). 
+*Kars*, 2020.08.26: it is working with Symbol Folders (object type 92) (using VW 2020).
 
 *Orso*, 2009.12.29: To obtain a list of sketch styles excluding records pass object type -47. This is to my knowledge the only usage of a negative object type.
 
